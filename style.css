@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inter:wght@200;300;500;600&family=Outfit:wght@400;700&display=swap');
+:root{
+    --light:hsl(0, 0%, 100%);
+    --dark:hsl(230, 17%, 14%);
+}
+body{
+    font-family: 'Inter', sans-serif;
+}
+[data-theme='dark'],
+[data-theme='dark'] a {
+  color: var(--light);
+  background: var(--dark);
+}
+
+[data-theme='light'] #toggle {
+  color: var(--light);
+  background: var(--dark);
+}
+#top-bg {
+   background-color: hsl(225, 100%, 98%);
+   height: 210px;
+   position: absolute;
+   top: 0px;
+   z-index: -1;
+}
+main{
+    max-width: 1440px;
+    margin: auto 140px;
+}
+h2 {
+    color: hsl(230, 17%, 14%);
+    margin: 0;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+
+ 
+.total-followers {
+    color: hsl(228, 12%, 44%);
+    margin: 0;
+    font-size: 13px;
+    font-weight: 700;
+}
+.grid-container1 {
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 25px;
+}
+.grid-item1 {
+    text-align: center;
+    border-radius: 5px;
+    background-color: hsl(227, 47%, 96%);
+    width: 230px;
+    height: 200px;
+}
+.grid-item1 img {
+   
+    margin-top: 20px;
+}
+span{
+    font-size: 11px;
+    color: hsl(228, 12%, 44%);
+    font-weight: 700;
+    display: inline;
+}
+.num{
+    font-weight: bold;
+    font-size: 45px;
+    margin: 0;
+}
+.follow{
+    letter-spacing: 4px;
+    font-size: 13px;
+    color: hsl(228, 12%, 44%);
+    line-height: 0.9;
+}
+.trend{
+    color: hsl(163, 72%, 41%);
+    font-size: 12px;
+}
+.red{
+    color: hsl(356, 69%, 56%);
+    font-size: 12px;
+}
+.fb{
+    border-top: 4px solid hsl(208, 92%, 53%);
+}
+.tw{
+    border-top: 4px solid hsl(203, 89%, 53%);
+}
+.ig{
+    border-top: solid 4px transparent;
+    border-image: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    border-image-slice: 1;
+}
+.tube{
+    border-top: 4px solid hsl(348, 97%, 39%);
+}
+
+.grid-container2 {
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 25px;
+}
+.grid-item2 {
+    border-radius: 5px;
+    background-color: hsl(227, 47%, 96%);
+    width: 230px;
+    height: 120px;
+}
+.title {
+    color: hsl(228, 12%, 44%);
+    font-size: 12px;
+    font-weight: 700;
+}
+.grid-item2 span {
+    display: inline;
+}
+.grid-item2 img {
+    position: relative;
+    bottom: 16px;
+    left: 180px;
+   display: block;
+}
+
+.grid-item2 .num{
+    font-size: 30px;
+    margin-left: 20px;
+}
+.grid-item2 .trend {
+    position: relative;
+    bottom: 30px;
+    left: 190px;
+}
+.grid-item2 .title {
+   margin-left: 20px;
+   margin-top: 20px;
+}
