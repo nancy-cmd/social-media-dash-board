@@ -2,14 +2,28 @@
 :root{
     --light:hsl(0, 0%, 100%);
     --dark:hsl(230, 17%, 14%);
+    --dark-blue:hsl(232, 19%, 15%);
+    --card-bg:hsl(228, 28%, 20%);
+    --text:hsl(228, 34%, 66%);
+    --white-text:hsl(0, 0%, 100%);
 }
 body{
     font-family: 'Inter', sans-serif;
 }
+/* dark mode styling*/
 [data-theme='dark'],
-[data-theme='dark'] a {
+[data-theme='dark'] a{
   color: var(--light);
   background: var(--dark);
+}
+[data-theme='dark'] #top-bg{
+    background: var(--dark-blue);
+}
+[data-theme='dark'] .grid-item1{
+    background-color: var(--card-bg);
+}
+[data-theme='dark'] .grid-item2{
+    background-color: var(--card-bg);
 }
 
 [data-theme='light'] #toggle {
@@ -137,3 +151,11 @@ span{
    margin-left: 20px;
    margin-top: 20px;
 }
+
+/* mobile version */
+
+@media screen {
+    
+}
+
+
