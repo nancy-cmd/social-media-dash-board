@@ -25,6 +25,12 @@ body{
 [data-theme='dark'] .grid-item2{
     background-color: var(--card-bg);
 }
+[data-theme='dark'] h2, h3 {
+    color: var(--white-text);
+}
+[data-theme='dark'] .total-followers{
+    color: var(--text);
+}
 
 [data-theme='light'] #toggle {
   color: var(--light);
