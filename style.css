@@ -73,7 +73,6 @@ label {
     width: 26px;
     left: 4px;
     bottom: 4px;
-    /*background-color: rgb(131, 64, 64);*/
     -webkit-transition: .4s;
     transition: .4s;
 }
