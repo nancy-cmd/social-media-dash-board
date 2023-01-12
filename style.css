@@ -122,7 +122,7 @@ h2 {
     font-size: 13px;
     font-weight: 700;
 }
-.grid-container1 {
+.grid-container1, .row {
     display: inline-grid;
     grid-template-columns: auto auto auto auto;
     column-gap: 25px;
@@ -178,7 +178,7 @@ span{
     border-top: 4px solid hsl(348, 97%, 39%);
 }
 
-.grid-container2 {
+.grid-container2, .row {
     display: inline-grid;
     grid-template-columns: auto auto auto auto;
     gap: 25px;
