@@ -35,9 +35,9 @@ body{
 label {
     float: right;
     border-radius: 50px;
-    width: 100%;
+    width: 100px;
     height: 100px;
-    margin-bottom: 14px;
+    margin: 14px;
 }
 [data-theme='light'] #toggle {
   color: var(--light);
@@ -50,9 +50,13 @@ label {
     height: 34px;
 }
  input {
-   position: absolute;
-   display: none;
-}
+    position: relative;
+    width: 50px;
+    height: 30px;
+    border-radius: 25px;
+    
+ }
+
 .slider {
     position: absolute;
     cursor: pointer;
@@ -75,6 +79,7 @@ label {
     bottom: 4px;
     -webkit-transition: .4s;
     transition: .4s;
+    border-radius: 50px;
 }
 [data-theme='dark'] .slider::before{
     background-color:var(--card-bg);
@@ -90,12 +95,7 @@ input:checked + .slider::before {
     -ms-transform: translateX(26px);
     transform: translateX(26px);
 }
-/*.slider, .round {
-    border-radius: 34px;
-}*/
-.slider, .round:before {
-    border-radius: 50%;
-}
+
 #top-bg {
    background-color: hsl(225, 100%, 98%);
    height: 210px;
@@ -103,9 +103,13 @@ input:checked + .slider::before {
    top: 0px;
    z-index: -1;
 }
-main{
-    max-width: 1440px;
+.wrapper-grid{
+    display: grid;
+   padding: 0 auto;
+   max-width: 90rem;
     margin: auto 140px;
+    
+    /**/
 }
 h2 {
     color: hsl(230, 17%, 14%);
@@ -122,8 +126,8 @@ h2 {
     font-size: 13px;
     font-weight: 700;
 }
-.grid-container1, .row {
-    display: inline-grid;
+.grid-container1 {
+    display: grid;
     grid-template-columns: auto auto auto auto;
     column-gap: 25px;
 }
@@ -178,7 +182,7 @@ span{
     border-top: 4px solid hsl(348, 97%, 39%);
 }
 
-.grid-container2, .row {
+.grid-container2 {
     display: inline-grid;
     grid-template-columns: auto auto auto auto;
     gap: 25px;
@@ -220,12 +224,18 @@ span{
 
 /* mobile version */
 
-@media screen and (max-width: 592px){
+@media screen and (max-width: 600px){
     .grid-container2{
-        display: flexbox;
-        position: relative;
-        grid-template-columns: auto auto auto auto;
-        gap: 25px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 11rem);
+       margin: 8px;
+        
+    }
+     .grid-container1{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 15rem);
+        column-gap: 25px;
+        margin: 10px;
     }
 }
 
