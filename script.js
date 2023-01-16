@@ -19,7 +19,7 @@ function setTheme() {
   document.body.dataset.theme = currentTheme;
 
   // update inner text of button dynamically based on current theme
-  themeSwitcher.innerText = currentTheme === 'light' ? 'Dark' : 'Light';
+  //themeSwitcher.innerText = currentTheme === 'light' ? 'Dark' : 'Light';
 }
 
 // set theme on inital load

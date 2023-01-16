@@ -5,7 +5,7 @@
     --dark-blue:hsl(232, 19%, 15%);
     --card-bg:hsl(228, 28%, 20%);
     --text:hsl(228, 34%, 66%);
-    --white-text:hsl(0, 0%, 100%);
+    --white-text:hsl(0, 0%, 90%);
 }
 body{
     font-family: 'Inter', sans-serif;
@@ -28,6 +28,12 @@ body{
 [data-theme='dark'] h2, h3 {
     color: var(--white-text);
 }
+[data-theme='light'] h2, h3 {
+    color: var(--dark-blue);
+}
+[data-theme='dark'] h3 {
+    color: var(--white-text);
+}
 [data-theme='dark'] .total-followers{
     color: var(--text);
 }
@@ -36,6 +42,8 @@ body{
 label {
     position: absolute;
     left: 90%;
+    bottom: 70%;
+    display: inline;
     border-radius: 50px;
     width: 100%;
     height: 100px;
@@ -45,6 +53,10 @@ label {
   color: var(--light);
   background: rgb(195, 193, 193);
 }
+[data-theme='dark'] #toggle {
+    color: var(--light);
+    background: hsl(177, 68%, 55%)
+  }
 .switch {
     position: relative;
     display: block;
@@ -98,6 +110,16 @@ input:checked + .slider::before {
     -ms-transform: translateX(26px);
     transform: translateX(26px);
 }
+.toggle-switch-text {
+    position: absolute;
+    left: 50%;
+    display: inline;
+    font-size: 16px;
+    
+}
+main {
+    max-width: 1440px;
+}
 
 #top-bg {
    background-color: hsl(225, 100%, 98%);
@@ -144,7 +166,7 @@ h2 {
 }
 .grid-item1 img {
    
-    margin-top: 20px;
+    margin-top: 18px;
 }
 span{
     font-size: 11px;
@@ -207,7 +229,7 @@ span{
 }
 .grid-item2 img {
     position: relative;
-    bottom: 16px;
+    bottom: 18px;
     left: 180px;
    display: block;
 }
@@ -247,6 +269,7 @@ span{
     label {
         position: absolute;
         left: 65%;
+        bottom: 5%;
     }
     .slider:before {
         height: 23px;
